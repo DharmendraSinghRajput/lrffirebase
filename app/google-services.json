@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "56821017194",
+    "project_id": "lrffirebase-fad0f",
+    "storage_bucket": "lrffirebase-fad0f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56821017194:android:8b84dff0667ad443a83813",
+        "android_client_info": {
+          "package_name": "com.example.lrffirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56821017194-erktdopovbg08n13nu8mjpiqn16qeekq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lrffirebase",
+            "certificate_hash": "70955ac773a1e6042b1a002984c457b7f16d6a52"
+          }
+        },
+        {
+          "client_id": "56821017194-q1ov2fd4tk3oqmfkhavutosm73oc2b4v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoIhIBKGK3QOO7pJiknYchejQXvdU6wSU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56821017194-q1ov2fd4tk3oqmfkhavutosm73oc2b4v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

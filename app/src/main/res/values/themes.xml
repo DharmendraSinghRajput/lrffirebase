@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LrfFirebase" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.LrfFirebase" parent="Base.Theme.LrfFirebase" />
+    <style name="Theme.RoundSquareImage" parent="">
+        <item name="cornerSize">10%</item>
+    </style>
+    <style name="Theme.SearchTeamEditText" parent="Theme.AppCompat">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="colorControlNormal">@color/dusty_gray</item>
+        <item name="colorControlActivated">@color/dusty_gray</item>
+        <item name="colorControlHighlight">@color/dusty_gray</item>
+        <item name="android:textColor">@color/dusty_gray</item>
+        <item name="android:textColorHint">@color/dusty_gray</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:background">@drawable/border_athens_gray</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:paddingTop">@dimen/_8sdp</item>
+        <item name="android:paddingBottom">@dimen/_8sdp</item>
+        <item name="android:paddingStart">@dimen/_8sdp</item>
+        <item name="android:paddingEnd">@dimen/_8sdp</item>
+    </style>
+</resources>

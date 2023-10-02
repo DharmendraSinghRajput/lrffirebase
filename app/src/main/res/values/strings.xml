@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">LrfFirebase</string>
+    <string name="email_phone">Email / Phone</string>
+    <string name="enter_email_phone">Enter Email Phone</string>
+    <string name="phone">Phone</string>
+    <string name="i_accept_t_c"><![CDATA[I Accept T&C]]></string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="log_in">Log in</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign Up</string>
+    <string name="name">Name</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="don_t_have_an_account_log_in">Don\'t have an account? Log In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="default_web_client_id">\n\n\n</string>
+    <string name="insert">Insert</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="are_you_sure_want_to_hide_comment">Are You Sure Want To Hide Comment?</string>
+    <string name="alert">Alert</string>
+    <string name="stripe_search">Search</string>
+
+
+</resources>
