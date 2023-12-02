@@ -96,8 +96,7 @@ class HomeActivity : AppCompatActivity() {
 
             useListData = arrayListOf()
             customDialogboxBinding.ivProfile.setOnClickListener {
-                val pickImg =
-                    Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
+                val pickImg = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
                 changeImage.launch(pickImg)
 
             }
@@ -195,8 +194,7 @@ class HomeActivity : AppCompatActivity() {
 
                         }
                     }else {
-                        FirebaseDatabase.getInstance().reference.child("user").child("user_details")
-                            .push()
+                        FirebaseDatabase.getInstance().reference.child("user").child("user_details").push()
                             .setValue(userInfo).addOnCompleteListener {
                                 mBinding.progressBar.visibility = View.VISIBLE
                                 if (it.isSuccessful) {

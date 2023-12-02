@@ -98,8 +98,9 @@ class LoginActivity : AppCompatActivity() {
     private var resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
             if (result.resultCode == Activity.RESULT_OK) {
                 val task = GoogleSignIn.getSignedInAccountFromIntent(result.data)
-                val account: GoogleSignInAccount? = task.getResult(ApiException::class.java)
-                handleResult(account)
+                val getAccount: GoogleSignInAccount? = task.getResult(ApiException::class.java)
+                handleResult(getAccount)
+                //signIn Account getting user id token get passing=>getAccount
             } else {
                 Log.d(
                     "ResponseEmailID2",
@@ -124,6 +125,7 @@ class LoginActivity : AppCompatActivity() {
         }*/
 
     private fun handleResult(account: GoogleSignInAccount?) {
+        //signIn Account Credantial user getting email,password
         val credentia = GoogleAuthProvider.getCredential(account?.idToken, null)
         //method Google Sign In
         Utils.auth?.signInWithCredential(credentia)?.addOnCompleteListener {

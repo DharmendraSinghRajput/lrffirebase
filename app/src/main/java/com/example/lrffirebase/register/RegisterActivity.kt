@@ -32,20 +32,15 @@ class RegisterActivity : AppCompatActivity() {
 
                 if (etName.text.toString().isNullOrEmpty() && etEmail.text.toString()
                         .isNullOrEmpty() && etPassword.text.toString()
-                        .isNullOrEmpty() && etAddress.text.toString().isNullOrEmpty()
-                ) {
+                        .isNullOrEmpty() && etAddress.text.toString().isNullOrEmpty()) {
                     Toast.makeText(
                         this@RegisterActivity,
                         "Please fill all Field",
                         Toast.LENGTH_SHORT
                     ).show()
                 } else {
-                    Utils.auth?.createUserWithEmailAndPassword(
-                        etEmail.text.toString().trim(),
-                        etPassword.text.toString().trim()
-                    )?.addOnSuccessListener {
-                        FirebaseDatabase.getInstance().reference.child("user").child("register")
-                            .push().setValue(userInfo)
+                    Utils.auth?.createUserWithEmailAndPassword(etEmail.text.toString().trim(), etPassword.text.toString().trim())?.addOnSuccessListener {
+                        FirebaseDatabase.getInstance().reference.child("user").child("register").push().setValue(userInfo)
                         startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
 
                     }?.addOnFailureListener {
